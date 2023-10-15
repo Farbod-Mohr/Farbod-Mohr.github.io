@@ -45,6 +45,16 @@
                 </button>
             </div>
 
+            
+            <div class="container-fluid p-0 collapse" id="search-btn-toggled-mobile">
+                <div class="bg-white p-4">
+                    <form id="search-btn-form" role="search" class="mx-auto">
+                        <input id="search-btn-bar" class="form-control me-2 border-0 w-100" type="search" placeholder="Search ASUS.com"
+                            aria-label="Search">
+                    </form>
+                </div>
+            </div>
+
 
             <div class="navbar-collapse collapse text above-nav-text fs-6 border-0" id="navbarNavDropdown">
                 <ul class="navbar-nav">
@@ -735,14 +745,7 @@
     </nav>
 
 
-    <div class="container-fluid p-0 collapse position-absolute" id="search-btn-toggled-mobile">
-        <div class="bg-white p-4">
-            <form id="search-btn-form" role="search" class="mx-auto">
-                <input id="search-btn-bar" class="form-control me-2 border-0 w-100" type="search" placeholder="Search ASUS.com"
-                    aria-label="Search">
-            </form>
-        </div>
-    </div>
+  
 
 
 
@@ -905,7 +908,7 @@
                     <div id="pc-nav-line" class="w-100 line position-absolute z-3"></div>
 
 
-                    <div class="container-fluid p-0 collapse position-absolute z-3" id="search-btn-toggled">
+                    <div class="container-fluid p-0 collapse position-absolute z-2" id="search-btn-toggled">
                         <div class="bg-white p-4">
                             <form id="search-btn-form" role="search" class="mx-auto">
                                 <input id="search-btn-bar" class="form-control me-2" type="search"
@@ -952,12 +955,29 @@
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner carousel-top">
 
+            
             <div class="carousel-item active">
+                <div class="position-relative">
+
                 <picture>
                     <source media="(min-width: 768px)" srcset="images/top_slider_1_tablet.webp">
                     <source media="(min-width: 1200px)" srcset="images/top_slider_1_PC.webp">
                     <img class="carousel-pic w-100 d-block" src="images/top_slider_1_mobile.webp">
                 </picture>
+
+                <p id="carousel-1-header" class="text position-absolute text-center w-100">
+                
+                    ASUS Vivobook S 15 OLED BAPE Edition
+
+                </p>
+
+                <a>
+                    <p id="carousel-1-link" class="text w-100 text-center position-absolute link-hover carousel-link">
+                        Learn More >
+                    </p>
+                </a>
+
+                </div>
             </div>
 
             <div class="carousel-item">
@@ -967,13 +987,34 @@
                     <img class="carousel-pic w-100 d-block" src="images/top_slider_2_mobile.webp">
                 </picture>
             </div>
+        
+            
 
             <div class="carousel-item">
-                <picture>
-                    <source media="(min-width: 768px)" srcset="images/top_slider_3_tablet.webp">
-                    <source media="(min-width: 1200px)" srcset="images/top_slider_3_PC.webp">
-                    <img class="carousel-pic w-100 d-block" src="images/top_slider_3_mobile.webp">
-                </picture>
+
+                <div class="position-relative">
+
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="images/top_slider_3_tablet.webp">
+                        <source media="(min-width: 1200px)" srcset="images/top_slider_3_PC.webp">
+                        <img class="carousel-pic w-100 d-block" src="images/top_slider_3_mobile.webp">
+                    </picture>
+
+                    <p id="carousel-3-header" class="text position-absolute text-center w-100">
+                        Top Trends in Cybersecurity 2023
+                    </p>
+
+                    <p id="carousel-3-text" class="text position-absolute text-center w-100">
+                        Paving the Way for Enhanced Security
+                    </p>
+
+                    <a>
+                        <p id="carousel-3-link" class="text w-100 text-center position-absolute link-hover carousel-link">
+                            Download Report >
+                        </p>
+                    </a>
+
+                </div>
             </div>
 
             <div class="carousel-item">
@@ -999,15 +1040,24 @@
 
     <!-- #region Fullscreen-->
 
-    <div class="container-fluid">
+    <div class="container-fluid d-block d-xl-none">
         <div class="row">
             <div class="col-12 no-padding">
                 <a href="#">
                     <picture>
                         <source media="(min-width: 768px)" srcset="images/full-screen-tablet.png">
-                        <source media="(min-width: 1200px)" srcset="images/full_screen.png">
                         <img src="images/full-screen-mobile.png" class="w-100 full-screen-2">
                     </picture>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid d-none d-xl-block">
+        <div class="row">
+            <div class="col-12 no-padding">
+                <a href="#">
+                    <img src="images/full_screen.png" class="w-100 full-screen-2">
                 </a>
             </div>
         </div>
@@ -1140,9 +1190,9 @@
 
     <!-- #region Campaign and Events images small-->
 
-    <div id="camp-eve-main" class="w-100 container p-6 d-md-none">
+    <div id="camp-eve-main" class="w-100 container-fluid p-6 d-md-none">
         <div class="row justify-content-center">
-            <div class="col-9">
+            <div class="col-7">
                 <a class="camp-eve-img-link-1 d-block" href="#">
 
                     <div id="camp-eve-img-1-container">
@@ -1174,7 +1224,7 @@
                     <div id="camp-eve-img-1-container">
                         <picture>
                         <source media="(min-width: 1200px)" srcset="images/bottom_slider_1_pc.png">
-                        <img id="camp-eve-img-1" class="hover-zoom" src="images/bottom_slider_1_tablet.png">
+                        <img id="camp-eve-img-1" src="images/bottom_slider_1_tablet.png">
                         </picture>
                     </div>
                     <div id="camp-eve-1-txt-container">
@@ -1187,7 +1237,7 @@
                     <div id="camp-eve-img-2-container">
                         <picture>
                         <source media="(min-width: 1200px)" srcset="images/bottom_slider_2_pc.png">
-                        <img id="camp-eve-img-2" class="hover-zoom" src="images/bottom_slider_2_tablet.png">
+                        <img id="camp-eve-img-2" src="images/bottom_slider_2_tablet.png">
                         </picture>
                     </div>
                     <div id="camp-eve-2-txt-container">
@@ -1200,11 +1250,11 @@
                     <div id="camp-eve-img-3-container">
                         <picture>
                         <source media="(min-width: 1200px)" srcset="images/bottom_slider_3_pc.png">
-                        <img id="camp-eve-img-3" class="hover-zoom" src="images/bottom_slider_3.png">
+                        <img id="camp-eve-img-3" src="images/bottom_slider_3.png">
                         </picture>
                     </div>
                     <div id="camp-eve-3-txt-container">
-                        <p id="camp-eve-3-txt">No.1 Gaming Monitor Brand</p>
+                        <p id="camp-eve-3-txt">Upgrading Education To Incredible</p>
                     </div>
                 </a>
             </div>
