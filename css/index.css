@@ -916,6 +916,7 @@ there's also gonna be a lot of them in the responsive section, but sadly they're
     background-color: #151515;
     background-image: url("../images/contact_bg.png");
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center, center;
     padding: 8rem 2rem 4rem;
     padding-top: 8rem;
