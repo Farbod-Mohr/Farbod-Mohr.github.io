@@ -292,11 +292,11 @@ document.querySelector("#contact-submit").addEventListener("click", function () 
                         clearInterval(LoaderDisappear)
                     }
 
-                }, 20)
+                }, 30)
 
                 clearInterval(LoaderAppear)
             }
-        }, 20)
+        }, 30)
 
         let error_num_major = 0 //Time to check for major errors.
         let NameValMajor = InputNameField.value;
