@@ -445,6 +445,7 @@ $(document).ready(function () {
         autoplay: false,
         smartSpeed: 500,
         autoHeight: true,
+        margin: 150,
 
         responsive: {
             0: {
