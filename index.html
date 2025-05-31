@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landing Page For Leaf It To Us!">
+    <meta name="keywords" content="Litu">
+    <meta name="author" content="Farbod Moharramzadeh">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <title>Glint</title>
+    <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+
+    <!-- #region Preloading-->
+
+    <div id="progress-bar" class="d-block fixed-top"></div>
+
+    <section id="preloading" class="fixed-top justify-content-center align-items-center">
+        <div id="preloading-anim">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </section>
+    
+    <script src="js/preloading-min.js"></script>
+
+    <!-- #endregion -->
+
+    <!-- #region Header and Side Nav-->
+
+    <div id="top-bg-para" class="parallax w-100 fixed-top d-block top-0"></div>
+
+    <div id="shadow-overlay" class="w-100 d-block position-absolute"></div>
+
+    <div id="header" class="w-100 container-fluid position-absolute z-3 top-0 bg-transparent px-0">
+
+
+        <div id="header-logo" class="position-absolute d-inline-block">
+            <a href="index.html" class="d-block mt-2">
+                <img src="images/Litu!.png" alt="Our Logo">
+            </a>
+        </div>
+
+        <nav id="nav-window" class="position-fixed top-0 Mont d-block nav-window-closed">
+
+            <button id="nav-x-btn" class="d-block position-absolute">
+                <i id="nav-x-icon" class="fa-solid fa-xmark d-block text-white fa-xs"></i>
+            </button>
+
+            <div id="nav-window-content" class="position-relative top-0 w-100 nav-window-content-base-state">
+                <h3 id="nav-window-content-header" class="fw-semibold w-100">
+                    NAVIGATION
+                </h3>
+
+                <ul id="nav-window-content-list" class="list-unstyled fw-semibold">
+                    <li>
+                        <a href="#header" id="nav-window-content-list-Home"
+                            class="nav-button pointer p-0 m-0 text-white non-der-line">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" id="nav-window-content-list-About"
+                            class="nav-button pointer p-0 m-0 text-white non-der-line">About</a>
+                    </li>
+                    <li>
+                        <a href="#services" id="nav-window-content-list-Services"
+                            class="nav-button pointer p-0 m-0 text-white non-der-line">Services</a>
+                    </li>
+                    <li>
+                        <a href="#works" id="nav-window-content-list-Works"
+                            class="nav-button pointer p-0 m-0 text-white non-der-line">Works</a>
+                    </li>
+                    <li>
+                        <a href="#clients" id="nav-window-content-list-Clients"
+                            class="nav-button pointer p-0 m-0 text-white non-der-line">Clients</a>
+                    </li>
+                    <li>
+                        <a href="#contact" id="nav-window-content-list-Contact"
+                            class="nav-button pointer p-0 m-0 text-white non-der-line">Contact</a>
+                    </li>
+                </ul>
+
+                <p id="nav-window-content-lorem" class="w-100 mt-5">
+                    If you aren't satisfied with our services, then neither are we.
+                    <a href="#contact" id="nav-window-content-lorem-link" class="non-der-line pointer">Contact us</a>
+                    and let us know of any and all improvements you think we can make! We're also available on all the
+                    socials you see below.
+                    Your suggestions matter!
+                </p>
+
+                <div id="nav-window-content-socials" class="m-0 p-0 w-100 container-fluid">
+                    <div class="row">
+                        <div class="col-1">
+                            <a id="nav-window-content-socials-fb" class="nav-socials-icons pointer">
+                                <i class="fa-brands fa-facebook-f fa-xs"></i>
+                            </a>
+                        </div>
+                        <div class="col-1">
+                            <a id="nav-window-content-socials-tw" class="nav-socials-icons pointer">
+                                <i class="fa-brands fa-twitter fa-xs"></i>
+                            </a>
+                        </div>
+                        <div class="col-1">
+                            <a id="nav-window-content-socials-in" class="nav-socials-icons pointer">
+                                <i class="fa-brands fa-instagram fa-xs"></i>
+                            </a>
+                        </div>
+                        <div class="col-1">
+                            <a id="nav-window-content-socials-be" class="nav-socials-icons pointer">
+                                <i class="fa-brands fa-behance fa-xs"></i>
+                            </a>
+                        </div>
+                        <div class="col-1">
+                            <a id="nav-window-content-socials-bs" class="nav-socials-icons pointer">
+                                <i class="fa-brands fa-dribbble fa-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <a id="header-nav-burger" class="Mont text-white position-fixed pointer scroll-bg">
+
+            <i id="header-burger-icon" class="fa-solid fa-bars d-inline-block"></i>
+            <span id="header-burger-icon-text" class="Mont position-absolute fw-semibold pointer scroll-bg">MENU</span>
+
+        </a>
+
+    </div>
+
+    <!-- #endregion -->
+
+    <!-- #region Home-->
+
+    <section id="home" class="bg-transparent position-relative w-100">
+
+        <ul id="home-social">
+            <li class="home-social-item">
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f fa-xs"></i>
+                    <span class="social-span">Facebook</span>
+                </a>
+            </li>
+            <li class="home-social-item">
+                <a href="#">
+                    <i class="fa-brands fa-twitter fa-xs"></i>
+                    <span class="social-span">Twitter/X</span>
+                </a>
+            </li>
+            <li class="home-social-item">
+                <a href="#">
+                    <i class="fa-brands fa-instagram fa-xs"></i>
+                    <span class="social-span">Instagram</span>
+                </a>
+            </li>
+            <li class="home-social-item">
+                <a href="#">
+                    <i class="fa-brands fa-behance fa-xs"></i>
+                    <span class="social-span">Behance</span>
+                </a>
+            </li>
+            <li class="home-social-item">
+                <a href="#">
+                    <i class="fa-brands fa-dribbble fa-xs"></i>
+                    <span class="social-span">Dribble</span>
+                </a>
+            </li>
+        </ul>
+
+
+        <div id="home-content" class="container-fluid bg-transparent position-relative loading un-loaded">
+            <div class="section-title">
+                <h3 id="home-content-h3" class="position-relative mt-0 Mont fw-semibold">
+                    WELCOME TO LITU
+                </h3>
+
+                <h1 id="home-content-h1" class="position-relative mt-0 Mont text-white">
+                    We are a passionate group
+                    <br>
+                    of people who care about
+                    <br>
+                    and tend to the plants and
+                    <br>
+                    flora of those who can't.
+                </h1>
+            </div>
+
+            <div id="home-content-buttons" class="position-relative align-items-center">
+                <a href="#contact" id="home-content-buttons-S-A-P"
+                    class="text-white btn bg-transparent fw-semibold Mont">
+                    SEND US AN EMAIL
+                </a>
+
+                <a href="#about" id="home-content-buttons-M-A-U" class="text-white btn bg-transparent fw-semibold Mont">
+                    MORE ABOUT US
+                </a>
+            </div>
+        </div>
+
+        <div id="scroll-container" class="position-absolute Mont fw-bold text-white pointer">
+            <a href="#about" id="scroll-click-eve" class="d-block non-der-line">
+
+                <span id="scroll-icon-span" class="d-inline-block">
+                    <i id="scroll-icon" class="fa-solid fa-chevron-down fa-2xs position-absolute"></i>
+                </span>
+
+                <p id="scroll-text" class="text-white fw-bold non-der-line">
+                    SCROLL DOWN
+                </p>
+            </a>
+        </div>
+
+        <div id="home-line-lead-into-about" class="position-absolute d-block bottom-0"></div>
+
+    </section>
+
+    <!-- #endregion -->
+
+    <!-- #region About-->
+
+    <section id="about" class="position-relative w-100">
+        <div id="about-title"
+            class="row Mont text-center position-relative w-100 mx-auto loading un-loaded section-title">
+            <div class="col-12 px-0">
+                <h3 id="about-title-h3" class="fw-bold mb-0 mt-0">
+                    DON'T WORRY,
+                </h3>
+
+                <h1 id="about-title-h1" class="text-white fw-semibold mt-0 mb-5">
+                    Just <span style="font-weight: 800;">Leaf</span> It To Us
+                </h1>
+
+                <div class="about-sep-line position-relative mb-5"></div>
+            </div>
+        </div>
+
+        <div id="about-content" class="row Lora text-center position-relative loading un-loaded">
+            <div class="col-12 px-0">
+                <p>
+                    We here at LITU are a nonprofit organization, committed to taking care of your ever-dear plant and
+                    flora <b>at times you're not able to!</b>
+                    <br>
+                    <br>
+                    Ever gone on a trip or vacation and had to leave your greenery at the hands of someone else,
+                    constantly having to worry about whether they’ll be fine when you return? Or even worse, having to
+                    leave them out to dry and simply have to hope for the best? <b>We are here to solve that
+                        problem.</b>
+                    <br>
+                    <br>
+                    Our professionals are ready to provide your foliage with the <b>utmost care</b> at
+                    <b>budget-friendly prices!</b>
+
+                </p>
+            </div>
+        </div>
+
+        <div id="about-stats"
+            class="container-fluid Mont px-0 position-relative w-100 text-center mt-5 loading un-loaded">
+
+            <div id="about-stats-row-1" class="row fw-bold d-xl-none justify-content-center">
+
+                <div class="col-12 col-md-6 col-xl-3 position-relative stat-col">
+                    <div id="about-stats-num-1" class="about-stats-num">0</div>
+                    <h5 class="about-stats-txt fw-bold">Days Of Operation</h5>
+                    <div class="about-sep-line-stat position-relative w-100 mt-4 d-none"></div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-3 position-relative stat-col">
+                    <div id="about-stats-num-2" class="about-stats-num">0</div>
+                    <h5 class="about-stats-txt fw-bold">Plants Cared For</h5>
+                    <div class="about-sep-line-stat position-relative w-100 mt-4 d-none"></div>
+                </div>
+
+            </div>
+
+
+            <div id="about-stats-row-2" class="row fw-bold d-xl-none justify-content-center">
+
+                <div class="col-12 col-md-6 col-xl-3 position-relative stat-col">
+                    <div id="about-stats-num-3" class="about-stats-num">0</div>
+                    <h5 class="about-stats-txt fw-bold">Happy customers</h5>
+                    <div class="about-sep-line-stat position-relative w-100 mt-4 d-none"></div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-3 position-relative stat-col">
+                    <div id="about-stats-num-4" class="about-stats-num">0</div>
+                    <h5 class="about-stats-txt fw-bold">Branches Worldwide</h5>
+                </div>
+
+            </div>
+
+            <!--========================================================================================-->
+
+            <div id="about-stats-row" class="row fw-bold d-none d-xl-flex justify-content-center">
+
+                <div class="col-xl-3 position-relative stat-col">
+                    <div id="about-stats-num-5" class="about-stats-num">0</div>
+                    <h5 class="about-stats-txt fw-bold">Awards Received</h5>
+                </div>
+
+                <div class="col-xl-3 position-relative stat-col">
+                    <div id="about-stats-num-6" class="about-stats-num">0</div>
+                    <h5 class="about-stats-txt fw-bold">Cups of Coffee</h5>
+                </div>
+
+                <div class="col-xl-3 position-relative stat-col">
+                    <div id="about-stats-num-7" class="about-stats-num">0</div>
+                    <h5 class="about-stats-txt fw-bold">Projects Completed</h5>
+                </div>
+
+                <div class="col-xl-3 position-relative stat-col">
+                    <div id="about-stats-num-8" class="about-stats-num">0</div>
+                    <h5 class="about-stats-txt fw-bold">Happy Clients</h5>
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+
+        <div id="about-line-lead-out-of-home" class="position-absolute d-block top-0 bg-white"></div>
+
+    </section>
+
+    <!-- #endregion -->
+
+    <!-- #region Sevices-->
+
+    <section id="services" class="position-relative w-100 d-block">
+        <div id="services-title"
+            class="row Mont text-center position-relative w-100 mx-auto un-loaded loading section-title">
+            <div class="col-12 px-0">
+                <h3 id="services-title-h3" class="fw-bold mb-2 mt-0">
+                    WHAT WE DO
+                </h3>
+
+                <h1 id="services-title-h1" class="text-black fw-semibold mt-0 mb-4">
+                    We've got everything your plants need to simply <b>flourish</b>
+                </h1>
+
+                <div class="service-sep-line position-relative mb-5 mx-auto w-100"></div>
+            </div>
+        </div>
+
+
+        <div id="services-content" class="container-fluid Mont position-relative w-100 text-center">
+            <div id="services-content-row-1" class="row">
+                <div class="col-12 col-md-6 position-relative services-col un-loaded loading">
+
+                    <div class="services-content-icon text-center">
+                        <i class="fa-solid fa-brush fa-2x"></i>
+                    </div>
+
+                    <div class="services-content-txt">
+                        <h3 class="services-content-txt-head fw-semibold">
+                            Brand Identity
+                        </h3>
+                        <p class="Lora services-content-txt-p">
+                            Do not fret; your plants will be in <i>vine</i> hands! Our organisation was founded by a
+                            few, ever passionate botany enthusiasts. We don't work for profit — we work for <b>you</b>
+                            and the love we hold for all nature. Any flora that are important to you, will be to us as
+                            well!
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-6 position-relative services-col un-loaded loading">
+
+                    <div class="services-content-icon">
+                        <i class="fa-regular fa-object-group fa-2x"></i>
+                    </div>
+
+                    <div class="services-content-txt">
+                        <h3 class="services-content-txt-head fw-semibold">
+                            Quality
+                        </h3>
+                        <p class="Lora services-content-txt-p">
+                            We will stop at nothing to give your potted pals the absolute perfect amount of water,
+                            nutrients, light, and even provide them with top-notch pest control. We even have
+                            specialized packages for private greenhouse spaces to protect even the most delicate of
+                            plants. We are <i>rooting</i> for your greenery!
+                        </p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div id="services-content-row-2" class="row">
+
+
+                <div class="col-12 col-md-6 position-relative services-col un-loaded loading">
+
+                    <div class="services-content-icon">
+                        <i class="fa-solid fa-bullhorn fa-2x"></i>
+                    </div>
+
+                    <div class="services-content-txt">
+                        <h3 class="services-content-txt-head fw-semibold">
+                            Marketing
+                        </h3>
+                        <p class="Lora services-content-txt-p">
+                            You can find daily blogs made by our team on all of our social media platforms that detail
+                            exactly how we treat your precious potted pals! Want to participate in <i>growing</i> this
+                            family of plant lovers? Send us videos of you and your plants with <u>#Litu</u>!
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-6 position-relative services-col un-loaded loading">
+
+                    <div class="services-content-icon">
+                        <i class="fa-solid fa-earth-americas fa-2x"></i>
+                    </div>
+
+                    <div class="services-content-txt">
+                        <h3 class="services-content-txt-head fw-semibold">
+                            Values
+                        </h3>
+                        <p class="Lora services-content-txt-p">
+                            We truly and only look for people who are <i>down to earth</i>. We offer employee benefits
+                            such as medical, dental, and vision insurance, along with all daycare plans being completely
+                            free for all of our team members! We are all one big family of botanists — so we make sure
+                            everyone will <i>thrive</i>, without exception.
+                        </p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- #endregion -->
+
+    <!-- #region Works-->
+
+    <section id="works" class="position-relative d-block bg-white">
+        <div id="works-title" class="row Mont text-center position-relative w-100">
+            <div id="works-title-text" class="col-12 px-4 un-loaded loading">
+                <h3 id="works-title-h3" class="fw-bold mt-0">
+                    SOME CROWD FAVORITES
+                </h3>
+
+                <h1 id="works-title-h1" class="text-white fw-semibold mt-0 mb-4 mx-auto">
+                    We love what we do, check out some of our latest & greatest clients!
+                </h1>
+
+                <div class="works-sep-line position-relative mb-5 mx-auto w-100"></div>
+            </div>
+        </div>
+
+        <div id="works-content" class="container-fluid position-relative w-100 px-0 un-loaded loading">
+            <div id="works-content-row-1" class="row">
+                <div id="works-content-col-1" class="col-12 col-md-6 position-relative px-0">
+
+                    <div id="works-content-item-1" class="works-content-item position-relative pointer">
+
+                        <a id="1" class="works-content-item-link" href="#">
+                            <img src="images/Ari.png" alt="Ari" class="works-content-item-images">
+                        </a>
+
+                        <div class="works-content-item-overlay"></div>
+                        <div class="works-content-item-plus">+</div>
+
+                        <div class="works-content-item-text Mont">
+                            <h3 class="works-content-item-text-h3">
+                                ARI
+                            </h3>
+                            <p class="works-content-item-text-p">
+                                Sun Kissed Skin With A Big Heart
+                            </p>
+                        </div>
+
+                        <div class="works-content-item-logo-line"></div>
+
+                        <a class="works-content-item-logo" href="https://www.behance.net/" Title="Link">
+                            <i class="fa-solid fa-link fa-2xs works-content-item-logo-icon"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div id="works-content-col-2" class="col-12 col-md-6 position-relative px-0">
+                    <div id="works-content-item-2" class="works-content-item position-relative pointer">
+                        <a class="works-content-item-link"
+                            href="#">
+                            <img src="images/Issac.png" alt="Issac" class="works-content-item-images">
+                        </a>
+
+                        <div class="works-content-item-overlay"></div>
+                        <div class="works-content-item-plus">+</div>
+
+                        <div class="works-content-item-text Mont">
+                            <h3 class="works-content-item-text-h3">
+                                ISSAC
+                            </h3>
+                            <p class="works-content-item-text-p">
+                                Slightly Off-Green — Extremely On-Style
+                            </p>
+                        </div>
+
+                        <div class="works-content-item-logo-line"></div>
+
+                        <a class="works-content-item-logo" href="https://www.behance.net/" Title="Link">
+                            <i class="fa-solid fa-link fa-2xs works-content-item-logo-icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="works-content-row-2" class="row">
+                <div id="works-content-col-3" class="col-12 col-md-6 position-relative px-0">
+
+                    <div id="works-content-item-3" class="works-content-item position-relative pointer loaded-item-3">
+                        <a class="works-content-item-link"
+                            href="#">
+                            <img src="images/Trisha.png" alt="Trisha" class="works-content-item-images">
+                        </a>
+
+                        <div class="works-content-item-overlay"></div>
+                        <div class="works-content-item-plus">+</div>
+
+                        <div class="works-content-item-text Mont">
+                            <h3 class="works-content-item-text-h3">
+                                TRISHA
+                            </h3>
+                            <p class="works-content-item-text-p">
+                                Many Sisters All With Hearts Of Gold
+                            </p>
+                        </div>
+
+                        <div class="works-content-item-logo-line"></div>
+
+                        <a class="works-content-item-logo" href="https://www.behance.net/" Title="Link">
+                            <i class="fa-solid fa-link fa-2xs works-content-item-logo-icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="works-content-col-4" class="col-12 col-md-6 position-relative px-0">
+                    <div id="works-content-item-4" class="works-content-item position-relative pointer">
+                        <a class="works-content-item-link"
+                            href="#">
+                            <img src="images/James.png" alt="James" class="works-content-item-images">
+                        </a>
+
+                        <div class="works-content-item-overlay"></div>
+                        <div class="works-content-item-plus">+</div>
+
+                        <div class="works-content-item-text Mont">
+                            <h3 class="works-content-item-text-h3">
+                                JAMES
+                            </h3>
+                            <p class="works-content-item-text-p">
+                                Crowned The "Class Clown" By Our Team Members
+                            </p>
+                        </div>
+
+                        <div class="works-content-item-logo-line"></div>
+
+                        <a class="works-content-item-logo" href="https://www.behance.net/" Title="Link">
+                            <i class="fa-solid fa-link fa-2xs works-content-item-logo-icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="works-content-row-3" class="row">
+                <div id="works-content-col-5" class="col-12 col-md-6 position-relative px-0">
+
+                    <div id="works-content-item-5" class="works-content-item position-relative pointer loaded-item-5">
+                        <a class="works-content-item-link"
+                            href="#">
+                            <img src="images/Tiffany.png" alt="Tiffany" class="works-content-item-images">
+                        </a>
+
+                        <div class="works-content-item-overlay"></div>
+                        <div class="works-content-item-plus">+</div>
+
+                        <div class="works-content-item-text Mont">
+                            <h3 class="works-content-item-text-h3">
+                                TIFFANY
+                            </h3>
+                            <p class="works-content-item-text-p">
+                                If The "Pretty Pink" Aesthetic Was A Plant
+                            </p>
+                        </div>
+
+                        <div class="works-content-item-logo-line"></div>
+
+                        <a class="works-content-item-logo" href="https://www.behance.net/" Title="Link">
+                            <i class="fa-solid fa-link fa-2xs works-content-item-logo-icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="works-content-col-6" class="col-12 col-md-6 position-relative px-0">
+                    <div id="works-content-item-6" class="works-content-item position-relative pointer">
+                        <a class="works-content-item-link"
+                            href="#"
+                            title="PAlmeira">
+                            <img src="images/Lavey.png" alt="Lavey" class="works-content-item-images">
+                        </a>
+
+                        <div class="works-content-item-overlay"></div>
+                        <div class="works-content-item-plus">+</div>
+
+                        <div class="works-content-item-text Mont">
+                            <h3 class="works-content-item-text-h3">
+                                Lavey
+                            </h3>
+                            <p class="works-content-item-text-p">
+                                "I'm Not Lavender, I'm Blue!" Cried Lavey,
+                                <br>
+                                "Nuh Uh!" Replied James
+                            </p>
+                        </div>
+
+                        <div class="works-content-item-logo-line"></div>
+
+                        <a class="works-content-item-logo" href="https://www.behance.net/" Title="Link">
+                            <i class="fa-solid fa-link fa-2xs works-content-item-logo-icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- #endregion -->
+
+    <!-- #region Clients-->
+
+    <section id="clients" class="position-relative d-block">
+        <div id="client-title" class="row Mont text-center position-relative w-100 mx-auto section-title">
+            <div class="col-12 px-0">
+                <h3 id="clients-title-h3" class="fw-bold mb-2 mt-0">
+                    OUR CLIENTS
+                </h3>
+
+                <h1 id="clients-title-h1" class="text-black fw-semibold mt-0 mx-auto mb-4">
+                    Litu is honored to have had clients from these companies
+                </h1>
+            </div>
+        </div>
+
+        <div id="clients-slider-container" class="row text-center position-relative mx-auto">
+
+            <div id="clients-slider" class="owl-carousel owl-loaded owl-drag">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage">
+                        <a href="#0" id="clients-slider-item-link-1" class="clients-slider-item-link owl-item">
+                            <i class="fa-brands fa-apple fa-2x clients-slider-item-icon non-der-line"></i>
+                        </a>
+
+                        <a href="#0" id="clients-slider-item-link-2" class="clients-slider-item-link owl-item">
+                            <i class="fa-brands fa-squarespace fa-2x clients-slider-item-icon non-der-line"></i>
+                        </a>
+
+                        <a href="#0" id="clients-slider-item-link-3" class="clients-slider-item-link owl-item">
+                            <i class="fa-brands fa-blackberry fa-2x clients-slider-item-icon non-der-line"></i>
+                        </a>
+
+                        <a href="#0" id="clients-slider-item-link-4" class="clients-slider-item-link owl-item">
+                            <i class="fa-brands fa-dropbox fa-2x clients-slider-item-icon non-der-line"></i>
+                        </a>
+
+                        <a href="#0" id="clients-slider-item-link-5" class="clients-slider-item-link owl-item">
+                            <i class="fa-brands fa-algolia fa-2x clients-slider-item-icon non-der-line"></i>
+                        </a>
+
+                        <a href="#0" id="clients-slider-item-link-6" class="clients-slider-item-link owl-item">
+                            <i class="fa-brands fa-firefox-browser fa-2x clients-slider-item-icon non-der-line"></i>
+                        </a>
+
+                        <a href="#0" id="clients-slider-item-link-7" class="clients-slider-item-link owl-item">
+                            <i class="fa-brands fa-joomla fa-2x clients-slider-item-icon non-der-line"></i>
+                        </a>
+
+                        <a href="#0" id="clients-slider-item-link-8" class="clients-slider-item-link owl-item">
+                            <i class="fa-brands fa-magento fa-2x clients-slider-item-icon non-der-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clients-sep-line position-relative"></div>
+        </div>
+
+
+        <div id="clients-quotes-container" class="row text-center position-relative">
+
+            <div id="clients-quotes-slider" class="owl-carousel owl-loaded owl-drag owl-height">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage">
+
+                        <div id="clients-quotes-item-1" class="clients-quotes-item owl-item">
+                            <p class="mb-5">
+                                What impressed me most is how <i>deep they dig</i> to find the most reliable, eco-conscious suppliers for eco-friendly pots, soil, and fertilizers from local garden centers and bulk distributors like Gardener’s Supply Co. and Greenhouse Megastore. They not only care about the well-being of your plants but the well-being of nature as a whole. Definitely a business built on nothing but love of passion.
+                            </p>
+
+                            <img src="images/Tim_high.png" alt="Tim Cook" class="clients-quotes-item-image">
+                            <div class="clients-quotes-item-names">
+                                <span class="Mont text-black fw-bold fs-6">Tim Cook</span>
+                                <span class="Mont fs-6">Ceo, Apple</span>
+                            </div>
+                        </div>
+
+                        <div id="clients-quotes-item-2" class="clients-quotes-item owl-item">
+                            <p class="mb-5">
+                                Truly an exceptional business model. They deliver on all their promises without exception, giving it their all to deliver a good service. The employees are kind, and the prices are budget friendly for everone.
+                            </p>
+
+                            <img src="images/Sundar_high.png" alt="Sundar Pichai" class="clients-quotes-item-image">
+                            <div class="clients-quotes-item-names">
+                                <span class="Mont text-black fw-bold fs-6">Sundar Pichai</span>
+                                <span class="Mont fs-6">Ceo, Google</span>
+                            </div>
+                        </div>
+
+                        <div id="clients-quotes-item-3" class="clients-quotes-item owl-item">
+                            <p class="mb-5">
+                                Hello,
+                                <br>
+                                This iz your new client. I'm coming over in a few hourz to eat- we mean- <i>i</i> mean leave all my plantz here. Pleaze keep your door unlocked and your lawn unguarded.
+                                <br>
+                                Sincerely,
+                                <br>
+                                Client (not the zombies)
+                            </p>
+
+                            <img src="images/pvz_zombie.png" alt="Satya Nadella" class="clients-quotes-item-image">
+                            <div class="clients-quotes-item-names">
+                                <span class="Mont text-black fw-bold fs-6">The Zombies</span>
+                                <span class="Mont fs-6">Zombies, PvZ</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+    </section>
+
+    <!-- #endregion -->
+
+    <!-- #region Contact-->
+
+    <section id="contact" class="position-relative w-100 d-block">
+        <div id="contact-overlay" class="position-absolute w-100 d-block"></div>
+        <div id="works-line-lead-into-contact" class="position-absolute d-block"></div>
+
+        <div id="contact-title" class="row Mont text-center position-relative w-100 mx-auto section-title">
+            <div id="content-title-text" class="col-12 px-4">
+                <h3 id="contact-title-h3" class="fw-bold mt-0">
+                    CONTACT US
+                </h3>
+                <h1 id="contact-title-h1" class="text-white fw-semibold mt-0 mb-4 mx-auto">
+                    Reach out to set up an appointment or just say "hello!"
+                </h1>
+            </div>
+        </div>
+
+        <div id="contact-content" class="row Mont w-100 position-relative mx-auto">
+            <div id="contact-content-primary" class="position-relative">
+
+                <h3 id="contact-forms-h3" class="position-relative mt-0 mb-5 text-white fw-bold">
+                    SEND US A MESSAGE
+                </h3>
+
+                <form id="contact-forms-form" action="" method="post" novalidate="novalidate">
+                    <fieldset>
+                        <div class="position-relative">
+                            <input type="text" id="contact-name" name="contactName" placeholder="Your Name"
+                                class="w-100">
+                            <label id="name-label" for="contactName" class="d-none"></label>
+                        </div>
+
+                        <div class="position-relative">
+                            <input type="text" id="contact-email" name="contactEmail" placeholder="Your Email"
+                                class="w-100">
+                            <label id="email-label" for="contactEmail" class="d-none"></label>
+                        </div>
+
+                        <div class="position-relative">
+                            <input type="text" id="contact-subject" placeholder="Subject" class="w-100">
+                        </div>
+
+                        <div class="position-relative">
+                            <textarea id="contact-message" name="contactMessage" placeholder="Your Message" rows="10"
+                                cols="50" class="w-100"></textarea>
+                            <label id="message-label" for="contactMessage" class="d-none"></label>
+                        </div>
+
+                        <div class="position-relative overflow-visible">
+                            <button type="button" id="contact-submit" class="w-100 mb-3">SUBMIT</button>
+
+                            <div id="contact-submit-loader" class="position-relative w-100 text-center overflow-hidden"
+                                style="height: 0px !important;">
+
+                                <div id="contact-submit-loader-text" class="Mont fw-bold text-white">SENDING...</div>
+
+                                <div id="contact-submit-loading" class="text-center">
+                                    <div id="bounce-1" class="bounce"></div>
+                                    <div id="bounce-2" class="bounce"></div>
+                                    <div id="bounce-3" class="bounce"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+
+                <div id="submit-fail" class="w-100 d-none"></div>
+
+                <div id="submit-success" class="w-100 d-none">
+                    The message was sent,
+                    <br>
+                    thank you!
+                </div>
+            </div>
+
+
+            <div id="contact-content-secondary" class="Mont position-relative">
+
+                <h3 id="contact-secondary-h3" class="text-white fw-semibold">
+                    CONTACT INFO
+                </h3>
+
+                <div class="contact-secondary-info">
+
+                    <h5 class="contact-secondary-info-h5">Where to Find Us</h5>
+
+                    <p class="contact-secondary-info-p">
+                        2967 College Ave
+                        <br>
+                        Berkeley, CA
+                        <br>
+                        94705 US
+                    </p>
+
+                </div>
+
+                <div class="contact-secondary-info">
+                    <h5 class="contact-secondary-info-h5">Email Us At</h5>
+                    <p class="contact-secondary-info-p">
+                        LITU@info.com
+                        <br>
+                        LeafItToUs@business.com
+                    </p>
+                </div>
+
+                <div class="contact-secondary-info">
+                    <h5 class="contact-secondary-info-h5">Call Us At</h5>
+                    <p class="contact-secondary-info-p">
+                        Phone: (+63) 555 1212
+                        <br>
+                        Mobile: (+63) 555 0100
+                        <br>
+                        Fax: (+63) 555 0101
+                    </p>
+                </div>
+
+                <ul id="contact-secondary-icon-list" class="w-100 list-unstyled list-group-horizontal d-flex m-0">
+
+                    <li class="contact-secondary-icon-list-item">
+                        <a href="#0" class="d-inline-block text-white">
+                            <i class="fa-brands fa-facebook-f fa-lg green-hover"></i>
+                        </a>
+
+                    <li class="contact-secondary-icon-list-item">
+                        <a href="#0" class="d-inline-block text-white">
+                            <i class="fa-brands fa-twitter fa-lg green-hover"></i>
+                        </a>
+
+                    <li class="contact-secondary-icon-list-item">
+                        <a href="#0" class="d-inline-block text-white">
+                            <i class="fa-brands fa-instagram fa-lg green-hover"></i>
+                        </a>
+
+                    <li class="contact-secondary-icon-list-item">
+                        <a href="#0" class="d-inline-block text-white">
+                            <i class="fa-brands fa-behance fa-lg green-hover"></i>
+                        </a>
+
+                    <li class="contact-secondary-icon-list-item mx-0">
+                        <a href="#0" class="d-inline-block text-white">
+                            <i class="fa-brands fa-dribbble fa-lg green-hover"></i>
+                        </a>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- #endregion -->
+
+    <!-- #region Footer-->
+
+    <section id="footer" class="d-block Mont text-center">
+
+        <div id="footer-main" class="row mx-auto w-100">
+
+            <div id="footer-main-desc" class="col-12 col-md-6 footer-main-left mb-5">
+                <div id="footer-main-desc-logo"></div>
+                <strong>PLACEHOLDER TEXT PLACEHOLDER TEXT PLACEHOLDER TEXT PLACEHOLDER TEXT PLACEHOLDER TEXT PLACEHOLDER TEXT PLACEHOLDER TEXT PLACEHOLDER TEXT PLACEHOLDER TEXT PLACEHOLDER TEXT PLACEHOLDER TEXT</strong>
+            </div>
+
+            <div id="footer-main-subscribe" class="col-12 col-md-6 footer-main-right">
+
+                <h4 id="footer-main-subscribe-h4">Get Notified</h4>
+                <p class="mb-4">
+                    <strong>PLACEHOLDER TEXT</strong>
+                </p>
+
+                <div class="position-relative m-0 p-0">
+                    <form class="w-100 mb-4">
+                        <input id="subscribe-email" type="text" value="" name="EMAIL" placeholder="Email Address"
+                            required>
+                        <button id="footer-subscribe-btn" type="button">SUBSCRIBE</button>
+                        <label id="subscribe-email-label" for="EMAIL" class="d-none fw-bold w-100">Submitting...</label>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="footer-bottom" class="Mont row w-100 mx-auto">
+            <div class="col-12 mx-0 p-0 w-100">
+                <span id="footer-copyright">© Copyright LITU 2025</span>
+                <span id="footer-site-by">
+                    Site Made by
+                    <a href="#" target="_blank" class="non-der-line">Farbod M.</a>
+                </span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- #endregion -->
+
+    <!-- #region Back-To-Top-->
+
+    <div id="back-to-top">
+        <a href="#header">
+            <i class="fa-solid fa-arrow-up fa-2xs"></i>
+        </a>
+
+    </div>
+
+    <!-- #endregion -->
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://kit.fontawesome.com/e0d8b5db99.js" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
