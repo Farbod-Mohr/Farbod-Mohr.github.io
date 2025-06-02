@@ -634,6 +634,7 @@ body {
 .works-content-item-images {
     vertical-align: bottom;
     transition: all 0.5s ease-in-out;
+    object-fit: cover;
     width: 100%;
 }
 
@@ -1867,7 +1868,7 @@ And so begins the responsive pain (T_T)
 /* these two are for the "works" sections's images "3" and "5" to render properly; Since they need to be off-center to line-up
 /* with the other images due to how bootstrap "col" classes work, and are not used for anything else */
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
     .loaded-item-3 {
         transform: translateY(-25%);
     }
@@ -1875,7 +1876,7 @@ And so begins the responsive pain (T_T)
     .loaded-item-5 {
         transform: translateY(-20%);
     }
-}
+} */
 
 /*====================================================================*/
 /*================================ Clients ===========================*/
